@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <title>Flappy</title>
-  <meta name="viewport" content="width=device-width,initial-scale=0.4,maximum-scale=0.4,user-scalable=no">
+  <meta name="viewport" content="width=device-width,initial-scale=0.5;maximum-scale=0.5;user-scalable=no;">
   <style>
     body { background-color: #292929; }
     button { display: block; margin: 0 auto; padding: 10px; border: none; background-color: aliceblue }
@@ -93,7 +93,7 @@ function fly() {
   world.isDemoMode = false;
   bird.fly();
 };
-document.addEventListener('click', fly);
+document.addEventListener('touchstart', fly);
 document.addEventListener('keydown', fly);
 function Tube(x) {
   this.x = x;
